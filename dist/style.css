@@ -1,0 +1,43 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+html, body, div, form, fieldset, legend, label
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    overflow: hidden;
+    background-color: #fbfbfb;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body::before
+{
+    content: '';
+    position: absolute;
+    inset: calc(1vh + 1vw);
+    border: 1px solid #fbfbfb;
+    z-index: 1;
+}
+
+canvas {
+    filter: blur(.5px);
+    /* animation: MapAnimation 30s infinite; */
+}
+
+@keyframes MapAnimation {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}

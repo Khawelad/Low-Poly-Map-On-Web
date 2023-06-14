@@ -1,0 +1,22 @@
+{
+  "name": "bongus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "live-server --open:./dist/index.html",
+    "build": "webpack --mode development"
+  },
+  "keywords": [],
+  "author": "Baller",
+  "license": "ISC",
+  "dependencies": {
+    "delaunator": "^5.0.0",
+    "perlin.js": "^1.0.0",
+    "poisson-disk-sampling": "^2.3.1"
+  },
+  "devDependencies": {
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
+  }
+}
